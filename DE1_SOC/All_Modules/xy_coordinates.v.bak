@@ -1,0 +1,26 @@
+//////////////////////////////////////////////////////////////////////////
+// XY Coordinates of Pixel - 160x120
+// 
+// Goes from (0,0) to (160,120) one bye one
+// With In-biuld Clock (50MHz)
+
+module xy_coordinates (clk, x, y);
+	input clk;
+	output reg x, y;
+	
+	always @(posedge clk)
+	begin
+		if (x == 3'd159)
+		begin
+			x <= 0;
+			
+			if ( y == 3'd119)
+				y <= 0;
+			else
+				y <= y + 1;
+		end
+		else
+			x <= x + 1;
+	end	
+endmodule
+//////////////////////////////////////////////////////////////////////////
