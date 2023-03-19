@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\DSD Quartus\Bresenham_Lines\Bresenham_Lines SFML\Debug\Bresenham_Lines.exe</FullPath>
+      <FullPath>D:\DSD Quartus\Bresenham_Lines_FPGA\Bresenham_Lines SFML\Debug\Bresenham_Lines.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

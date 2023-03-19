@@ -101,17 +101,26 @@ inout 		    [35:0]		GPIO
 	wire [7:0] x;
 	wire [6:0] y;
 
-	assign colour = y[2:0]; // Color = (y mod 8) OR (y%8)
-	xy_coordinates UU (.clk(CLOCK_50), .reset(KEY[0]), .x(x), .y(y));	
+	
+	single_port_ram #(parameter DATA_WIDTH=3, parameter ADDR_WIDTH=15)
+		my_ram_instance (
+        .data(data_in),
+        .addr(address),
+        .we(write_en),
+        .clk(clock),
+        .q(data_out)
+		);
 	
 	
+	
+	xy_coordinates UU (.clk(CLOCK_50), .reset(KEY[3]), .x(x), .y(y));	
 	vga_adapter VGA(
-			.resetn(KEY[0]),
+			.resetn(KEY[3]),
 			.clock(CLOCK_50),
 			.colour(colour),
 			.x(x),
 			.y(y),
-			.plot(~(KEY[3])),
+			.plot(~(KEY[0])),
 			/* Signals for the DAC to drive the monitor. */
 			.VGA_R(VGA_R),
 			.VGA_G(VGA_G),

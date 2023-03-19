@@ -54,7 +54,7 @@ int main() {
     W = res_X * pixel_Size;
     H = res_Y * pixel_Size;
     sf::RenderWindow app(sf::VideoMode(W, H), "Bresenham", sf::Style::Default, sf::ContextSettings(0, 0, 8));
-
+    
     display.resize(res_Y, vector<sf::RectangleShape>(res_X));
     for (int y = 0; y < res_Y; y++) {
         for (int x = 0; x < res_X; x++) {
@@ -82,14 +82,11 @@ int main() {
 
         for (int y = 0; y < res_Y; y++) {
             for (int x = 0; x < res_X; x++) {
-                display[y][x].setFillColor(sf::Color(10, 20, (x * y) / 200));
+                display[y][x].setFillColor(sf::Color(20*x, 10*y, (x * y) / 200));
             }
         }
 
-        Lines_Bresenham(15, 13, sf::Mouse::getPosition(app).x / pixel_Size, sf::Mouse::getPosition(app).y / pixel_Size);
-
-
-
+        //Lines_Bresenham(15, 13, sf::Mouse::getPosition(app).x / pixel_Size, sf::Mouse::getPosition(app).y / pixel_Size);
 
         /*Draw*/
         {
