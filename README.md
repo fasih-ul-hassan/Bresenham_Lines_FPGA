@@ -1,7 +1,8 @@
 ## Bresenham_Lines on LCD through VGA in FPGA
 
 > ### Parts
-> * Demonstration of Bresenham Algorithm for draw Lines in [C++/SFML](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/tree/main/Bresenham_Lines%20SFML)
+> * [Demonstration](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/blob/main/Bresenham_Lines%20SFML/Bresenham_x86.rar) of Bresenham Algorithm for draw Lines in [C++/SFML](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/tree/main/Bresenham_Lines%20SFML)
+![](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/blob/main/Bresenham_Lines%20SFML/Documents/App.png)
 > * Our Circuit
 >   * RAM - FrameBuffer
 >   * Bresenham Algorithm to draw Lines
