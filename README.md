@@ -5,7 +5,7 @@
 > * Our Circuit
 >   * RAM - FrameBuffer
 >   * Bresenham Algorithm to draw Lines
->   * [7-Segment Display - For Debugging](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/blob/main/DE1_SOC/All_Modules/7_Segment_0_19.v)
+>   * [7-Segment Display](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/blob/main/DE1_SOC/All_Modules/7_Segment_0_19.v) - For Debugging
 > * [VGA Adapter Core](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/tree/main/DE1_SOC/All_Modules/vga_adapter)
 
 > ### Creadits
