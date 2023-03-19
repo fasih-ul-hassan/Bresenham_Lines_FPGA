@@ -6,8 +6,15 @@
 
 module xy_coordinates (clk, reset, x, y);
 	input clk, reset;
-	output reg [7:0] x;
-	output reg [6:0] y;
+	output reg [7:0] x = 0;
+	output reg [6:0] y = 0;
+	
+	
+	initial
+	begin
+			x <= 0;
+			y <= 0;
+	end
 	
 	always @(posedge clk, negedge reset)
 	begin
@@ -30,6 +37,7 @@ module xy_coordinates (clk, reset, x, y);
 			else
 				x <= x + 1;
 		end
-	end	
+	end
+	
 endmodule
 //////////////////////////////////////////////////////////////////////////

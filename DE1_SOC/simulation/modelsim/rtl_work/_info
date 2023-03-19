@@ -8,76 +8,101 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/DSD Quartus/Bresenham_Lines/DE1_SOC/simulation/modelsim
+Z0 dD:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/simulation/modelsim
 vDE1_SOC
-Z1 !s110 1679155929
+Z1 !s110 1679235682
 !i10b 1
-!s100 G4FHHn]W]DL7@LPeFNO[I1
+!s100 dGzlgM^DiPDe`bzZ;j?h53
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IlU_M<T:gYzhbQ2LX9ZY]22
+Ij;deNYP>BWGo7VH:nW8Q23
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1679150796
-8D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/DE1_SOC.v
-FD:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/DE1_SOC.v
-!i122 4
-L0 6 114
+w1679235486
+8D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/DE1_SOC.v
+FD:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/DE1_SOC.v
+!i122 0
+L0 6 122
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1679155929.000000
-!s107 D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/DE1_SOC.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules|D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/DE1_SOC.v|
+Z5 !s108 1679235682.000000
+!s107 D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/DE1_SOC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC|D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/DE1_SOC.v|
 !i113 1
 Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work {+incdir+D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules}
+Z7 !s92 -vlog01compat -work work {+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC}
 Z8 tCvgOpt 0
 n@d@e1_@s@o@c
+vTest
+Z9 !s110 1679235683
+!i10b 1
+!s100 VfLMj5^X1hJl?C@jGO]HP3
+R2
+I<SXW4T6c;S<3ge9WhG4dR1
+R3
+R0
+w1679235573
+8D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/Test.v
+FD:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/Test.v
+!i122 6
+L0 1 1223
+R4
+r1
+!s85 0
+31
+Z10 !s108 1679235683.000000
+!s107 D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/Test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC|D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/Test.v|
+!i113 1
+R6
+R7
+R8
+n@test
 vvga_adapter
-Z9 !s110 1679155928
+R9
 !i10b 1
 !s100 LGG9A1g7[FX^TkSHkNjAn3
 R2
-IFGfmIbCfBgZ=>o:6n>HzN1
+I2j74DSbH@8OAHGn@?ll>V0
 R3
 R0
 w1195045754
-8D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_adapter.v
-FD:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_adapter.v
-!i122 3
+8D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_adapter.v
+FD:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_adapter.v
+!i122 4
 L0 78 185
 R4
 r1
 !s85 0
 31
-Z10 !s108 1679155928.000000
-!s107 D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_adapter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter|D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_adapter.v|
+R10
+!s107 D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter|D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_adapter.v|
 !i113 1
 R6
-Z11 !s92 -vlog01compat -work work {+incdir+D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter}
+Z11 !s92 -vlog01compat -work work {+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter}
 R8
 vvga_address_translator
 R9
 !i10b 1
 !s100 6O^kFe9T_oJJ6XWM:Lb=F1
 R2
-IF=_c3<;n::S8:cbVRl[bU2
+IOzB`Qg4k`Db@MThe[9lSN2
 R3
 R0
 w1183975996
-8D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_address_translator.v
-FD:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_address_translator.v
-!i122 2
+8D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_address_translator.v
+FD:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_address_translator.v
+!i122 3
 L0 4 32
 R4
 r1
 !s85 0
 31
 R10
-!s107 D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_address_translator.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter|D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_address_translator.v|
+!s107 D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_address_translator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter|D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_address_translator.v|
 !i113 1
 R6
 R11
@@ -87,70 +112,70 @@ R9
 !i10b 1
 !s100 4jM<ZX9@k][=S<o^N8YV82
 R2
-Iz^9dOlXP=e8_:gSdlj7gO1
+I2^J[7ZkUz0:T1:W3]8[F@0
 R3
 R0
 w1195049638
-8D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_controller.v
-FD:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_controller.v
-!i122 1
+8D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_controller.v
+FD:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_controller.v
+!i122 2
 L0 9 204
 R4
 r1
 !s85 0
 31
-R10
-!s107 D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_controller.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter|D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_controller.v|
+R5
+!s107 D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter|D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_controller.v|
 !i113 1
 R6
 R11
 R8
 vvga_pll
-R9
+R1
 !i10b 1
 !s100 bV0aSo<]g67FV]JDZW]F`0
 R2
-IZ@ff=@3g1o5F3;9Df4eY03
+IYQiG<QT>aU30d30O9nX153
 R3
 R0
 w1184050876
-8D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_pll.v
-FD:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_pll.v
-!i122 0
+8D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_pll.v
+FD:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_pll.v
+!i122 1
 L0 36 41
 R4
 r1
 !s85 0
 31
-R10
-!s107 D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_pll.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter|D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/vga_adapter/vga_pll.v|
+R5
+!s107 D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter|D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/vga_adapter/vga_pll.v|
 !i113 1
 R6
 R11
 R8
 vxy_coordinates
-R1
+R9
 !i10b 1
-!s100 9`e7jlgOjN:Sf`jX[OZEQ1
+!s100 LkXNgj=C[FNdnOMIe??k]1
 R2
-IQcg?DN3WF_TcnOLXdjU9c3
+ILdK2:m:?ilGMTHJX1gVeB1
 R3
 R0
-w1678996300
-8D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/xy_coordinates.v
-FD:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/xy_coordinates.v
+w1679235556
+8D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/xy_coordinates.v
+FD:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/xy_coordinates.v
 !i122 5
-L0 7 28
+L0 7 36
 R4
 r1
 !s85 0
 31
-R5
-!s107 D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/xy_coordinates.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules|D:/DSD Quartus/Bresenham_Lines/DE1_SOC/All_Modules/xy_coordinates.v|
+R10
+!s107 D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/xy_coordinates.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules/xy_coordinates.v|
 !i113 1
 R6
-R7
+!s92 -vlog01compat -work work {+incdir+D:/DSD Quartus/Bresenham_Lines_FPGA/DE1_SOC/All_Modules}
 R8
