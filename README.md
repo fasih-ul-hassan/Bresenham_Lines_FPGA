@@ -1,14 +1,13 @@
 ## Bresenham_Lines on LCD through VGA in FPGA
 
 > ### Parts
-> * [ALU](https://github.com/IrfanJames/4bit_Microprocessor_FPGA/blob/main/DE1_SOC/All_Modules/Add_Sub_n.v)
->   * Addition
->   * Subtraction
-> * [Registers](https://github.com/IrfanJames/4bit_Microprocessor_FPGA/blob/main/DE1_SOC/All_Modules/Register.v)
-> * [RAM](https://github.com/IrfanJames/4bit_Microprocessor_FPGA/blob/main/DE1_SOC/All_Modules/RAM.v)
-> * [Counter](https://github.com/IrfanJames/4bit_Microprocessor_FPGA/blob/main/DE1_SOC/All_Modules/Program_Counter.v)
-> * [7-Segment Display](https://github.com/IrfanJames/4bit_Microprocessor_FPGA/blob/main/DE1_SOC/All_Modules/7_Segment_0-F.v)
+> * Demonstration of Bresenham Algorithm for draw Lines in [C++/SFML](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/tree/main/Bresenham_Lines%20SFML)
+> * Our Circuit
+>   * RAM - FrameBuffer
+>   * Bresenham Algorithm to draw Lines
+>   * [7-Segment Display](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/blob/main/DE1_SOC/All_Modules/7_Segment_0_19.v) - For Debugging
+> * [VGA Adapter Core](https://github.com/fasih-ul-hassan/Bresenham_Lines_FPGA/tree/main/DE1_SOC/All_Modules/vga_adapter)
 
 > ### Creadits
 >
-> [Ben Eater](https://www.youtube.com/watch?v=HyznrdDSSGM&list=PLowKtXNTBypGqImE405J2565dvjafglHU)
+> University of Toronto [Electrical and Computer Engineering's VGA Adapter website](https://www.eecg.utoronto.ca/~jayar/ece241_07F/vga/)
