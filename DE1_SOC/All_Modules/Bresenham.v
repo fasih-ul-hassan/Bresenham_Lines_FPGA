@@ -1,20 +1,32 @@
 //////////////////////////////////////////////////////////////////////////
-// Draws Lines with Bresenham Algorithm
-// Has Access to the RAM
+// Bresenham_Lines - 160x120
 
 
-module Bresenham
-//#(parameter X_WIDTH=160, parameter Y_WIDTH=120)
-(clk, write_En, x1, y1, Bres_addr, Bres_colour);
-	input clk, write_En;
+module Bresenham (clk, x1, y1, x, y, colour);
+	input clk;
 	input [7:0] x1;
 	input [6:0] y1;
+	wire  [7:0] x0 = 160/2;
+	wire	[6:0] y0 = 120/2;
+	
+	output reg [7:0] x;
+	output reg [6:0] y;
+	output reg [2:0] colour;
+		
+	wire [7:0] dx = (x0 - x1);
+	wire [6:0] dy = (y0 - y1);
+	
+	initial
+	begin
+			  x <= x0;
+			  y <= y0;
+		colour <= 0;
+	end
 	
 	always @(posedge clk)
 	begin
-		if (write_En)
-			;
-		end
+		x <= dx;
+		y <= dy;
 	end
 	
 endmodule

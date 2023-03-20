@@ -91,48 +91,36 @@ inout 		    [35:0]		GPIO
 );
 
 
-
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 	
+	assign LEDR = SW;
 	
-	wire [2:0] colour;
 	wire [7:0] x;
 	wire [6:0] y;
-
-	
-	single_port_ram #(parameter DATA_WIDTH=3, parameter ADDR_WIDTH=15)
-		my_ram_instance (
-        .data(data_in),
-        .addr(address),
-        .we(write_en),
-        .clk(clock),
-        .q(data_out)
-		);
+	wire [2:0] colour;
 	
 	
+	xy_coordinates (CLOCK_50, KEY[0], x, y);
+	assign colour = y[2:0];
 	
-	xy_coordinates UU (.clk(CLOCK_50), .reset(KEY[3]), .x(x), .y(y));	
-	vga_adapter VGA(
-			.resetn(KEY[3]),
+	vga_adapter VGA (
+			.resetn(KEY[0]),
 			.clock(CLOCK_50),
 			.colour(colour),
 			.x(x),
 			.y(y),
-			.plot(~(KEY[0])),
-			/* Signals for the DAC to drive the monitor. */
+			.plot(~(KEY[1])),
 			.VGA_R(VGA_R),
 			.VGA_G(VGA_G),
 			.VGA_B(VGA_B),
 			.VGA_HS(VGA_HS),
-			.VGA_VS(VGA_VS));
+			.VGA_VS(VGA_VS),
+			.VGA_BLANK(VGA_BLANK_N),
+			.VGA_SYNC(VGA_SYNC_N),
+			.VGA_CLK(VGA_CLK));
 		defparam VGA.RESOLUTION = "160x120";
 		defparam VGA.MONOCHROME = "FALSE";
-		defparam VGA.BITS_PER_COLOUR_CHANNEL = 1;
-		defparam VGA.BACKGROUND_IMAGE = "image.colour.mif";
-		defparam VGA.USING_DE1 = "TRUE";
 	
 endmodule
-
-

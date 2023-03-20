@@ -282,17 +282,22 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Test
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Test -section_id Test
 set_global_assignment -name EDA_TEST_BENCH_FILE Test.v -section_id Test
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Test -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME Test -section_id eda_simulation
+set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY OFF -section_id eda_simulation
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_CONVST
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_DIN
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_DOUT
@@ -497,20 +502,17 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[32]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[33]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[34]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[35]
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
-set_global_assignment -name VERILOG_FILE Test.v
-set_global_assignment -name VERILOG_FILE DE1_SOC.v
+set_global_assignment -name VERILOG_FILE All_Modules/vga_adapter/vga_demo.v
 set_global_assignment -name VERILOG_FILE All_Modules/vga_adapter/vga_pll.v
 set_global_assignment -name VERILOG_FILE All_Modules/vga_adapter/vga_controller.v
 set_global_assignment -name VERILOG_FILE All_Modules/vga_adapter/vga_address_translator.v
 set_global_assignment -name VERILOG_FILE All_Modules/vga_adapter/vga_adapter.v
+set_global_assignment -name VERILOG_FILE All_Modules/xy_coordinates.v
 set_global_assignment -name VERILOG_FILE All_Modules/Clock_Divider.v
 set_global_assignment -name VERILOG_FILE All_Modules/7_Segment_0_19.v
-set_global_assignment -name VERILOG_FILE All_Modules/xy_coordinates.v
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Test -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME Test -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE Test.v
+set_global_assignment -name VERILOG_FILE DE1_SOC.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VERILOG_FILE All_Modules/RAM.v
-set_global_assignment -name VERILOG_FILE All_Modules/Bresenham.v

@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("E:/4bit_Microprocessor_FPGA/DE1_SOC/") File("DE1_SOC.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/DLD LAB/Desktop/4bit_Microprocessor_FPGA-main/DE1_SOC/output_files/") File("DE1_SOC.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
